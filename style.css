@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* header */
+
+.header_index{
+    margin: 30px 20px 50px 0;
+
+}
+.header_index nav ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+.header_index nav ul li{
+    padding: 0 8px;
+}
+.header_index nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    border: 2px white solid;
+    border-style: inset;
+    background-color: lightcoral;
+}
+body{
+    background-image: url(./img/spa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* main */
+.main_index div{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+
+}
+.main_index div p{
+    font-size: 20px;
+    padding: 15px;
+
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+
+.main_index{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "div1 div2"
+    "div3 div4";
+}
+.main_index-div1{
+    grid-area: div1;
+}
+.main_index-div2{
+    grid-area: div2;
+}
+.main_index-div3{
+    grid-area: div3;
+}
+.main_index-div4{
+    grid-area: div4;
+}
+
+/* footer */
+footer{
+   background-color: black;
+}
+.footer_index{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    
+}
+.footer_index nav ul{
+    display: flex;
+    list-style: none;
+
+}
+.footer_index nav ul li{
+  padding: 30px;
+
+
+}
+.footer_index li a{
+    color: lightcoral;
+    font-size: 20px;
+    padding: 20px;
+    margin: 40px;
+}
+
+/*home*/
+
+
+.header_home{
+    margin: 30px 20px 50px 0;
+}
+.header_home nav ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+.header_home nav ul li{
+    padding: 0 8px;
+}
+.header_home nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    border: 2px white solid;
+    border-style: inset;
+    background-color: lightcoral;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    align-items: center;
+}
+h1{
+    background-color: lightcoral;
+    color: white;
+    border: 2px solid white;
+    padding: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .main_index{
+     display: flex;
+     flex-direction: column;
+    }
+}
